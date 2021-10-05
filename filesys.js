@@ -181,7 +181,7 @@ var updateFileWizard=()=>{
 }
 
 var renameFileWizard=()=>{
-    rl.question("Enter File name:",(ans)=>{
+    rl.question("Enter old File name:",(ans)=>{
         var oldfile=ans;
         rl.question('Enter new File Name:',(ans)=>{
             fs.rename(oldfile+".txt",ans+".txt",(err)=>{
