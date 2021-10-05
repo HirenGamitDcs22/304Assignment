@@ -63,7 +63,7 @@ var creatDir=()=>{
         if(err){
             console.log(err);
         }else{
-            console.log("Directory Created Successfully...!");
+            console.log("Directory Created Successfully...! " +dirName);
         }
         repeat();
     });
@@ -80,7 +80,7 @@ var removeDir=()=>{
         if(err){
             console.log(err);
         }else{
-            console.log("Directory Removed Successfully...!");
+            console.log(dirName+" Directory Removed Successfully...!");
         }
         repeat();
     });
@@ -100,7 +100,7 @@ var writeFileData=()=>{
         if(err){
             console.log(err);
         }else{
-            console.log("File Created Successfully...!");
+            console.log("File Created Successfully...! "+fileName);
         }
         repeat();
     });
@@ -126,7 +126,7 @@ var deleteFileWizard=()=>{
             if(err){
                 console.log(err);
             }else{
-                console.log("File Deleted Successfully...!");
+                console.log(ans+".txt File Deleted Successfully...!");
             }
             repeat();
         });
@@ -142,7 +142,7 @@ var appendDataFileWizard=()=>{
                 if(err){
                     console.log(err);
                 }else{
-                    console.log("File Append Successfully...!");
+                    console.log(fileName+".txt  File Append Successfully...!");
                 }
                 repeat();
             });
@@ -168,7 +168,7 @@ var updateFileWizard=()=>{
                                 console.log(err);
                             }
                             else{
-                                console.log("File Updated.");
+                                console.log(fileName+".txt  File Updated.");
                             }
                             repeat();
                         });
@@ -187,7 +187,7 @@ var renameFileWizard=()=>{
                 if(err){
                     console.log(err);
                 }else{
-                    console.log("File Renamed.")
+                    console.log(oldfile+".txt File is Renamed to "+ans+".txt");
                 }
                 repeat();
             });
